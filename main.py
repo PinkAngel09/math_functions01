@@ -17,7 +17,7 @@ def trap_area (len1, len2, height):
     st.success(f"The area of the trapezium is: { str(((len1+len2)*height)/2) }")
 
 def cir_area(radius):
-    st.success(f"The area of the circle is: { str((math.pi*(radius*2)))}")
+    st.success(f"The area of the circle is: { str((math.pi*(radius*radius)))}")
 
 def circumference(rad1):
     st.success(f"The circumference is: { str(((rad1*2)*math.pi))}")
@@ -61,7 +61,7 @@ colx, coly = st.beta_columns(2)
 
 with colx:
     st.header('Area of a Circle')
-    st.text('area = 3.14(radius * 2)')
+    st.text('area = 3.14(radius * radius)')
     radius = st.number_input('Enter the radius:')
     cir_area(radius)
 
@@ -88,7 +88,7 @@ def trap_area (len1, len2, height):
     st.success(f"The area of the trapezium is: { str(((len1+len2)*height)/2) }")
 
 def cir_area(radius):
-    st.success(f"The area of the circle is: { str((math.pi*(radius*2)))}")
+    st.success(f"The area of the circle is: { str((math.pi*(radius*radius)))}")
 
 def circumference(rad1):
     st.success(f"The circumference is: { str(((rad1*2)*math.pi))}")
